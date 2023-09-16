@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pricing.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <title>Subscription Page</title>
+  <script>
+    $(document).ready(function(){
+      $("p").hide();
+      $("t1").hide();
+      $(".t2").hide();
+      $(".montly").hide();
+      $(".anually").hide();
+      $(".box").click(function(){
+        $(this).css("background","blue");
+        $(this).css("color","white");
+        $(".box1").css("background","white");
+        $(".box1").css("color","black");
+        $(".monthly").show();
+        $(".t1").show();
+        $(".anually").hide();
+        $(".t2").hide();
+      });
+
+      $(".box1").click(function(){
+        $(this).css("background","blue");
+        $(this).css("color","white");
+        $(".box").css("background","white");
+        $(".box").css("color","black");
+        $(".anually").show();
+        $(".t2").show();
+        $(".monthly").hide();
+        $(".t1").hide();
+      });
+
+      $(".sub").click(function(){
+        $(this).css("background","blue")
+      });
+
+      $(".sub1").click(function(){
+        $(".ho1").css("color","blue")
+        $(".ho2").css("color","black")
+        $(".ho3").css("color","black")
+        $(".ho4").css("color","black")
+      });
+
+      $(".sub2").click(function(){
+        $(".ho1").css("color","black")
+        $(".ho2").css("color","blue")
+        $(".ho3").css("color","black")
+        $(".ho4").css("color","black")
+      });
+
+      $(".sub3").click(function(){
+        $(".ho1").css("color","black")
+        $(".ho2").css("color","black")
+        $(".ho3").css("color","blue")
+        $(".ho4").css("color","black")
+      });
+
+      $(".sub4").click(function(){
+        $(".ho1").css("color","black")
+        $(".ho2").css("color","black")
+        $(".ho3").css("color","black")
+        $(".ho4").css("color","blue")
+      });
+    });
+
+    function getTxt(){
+        var txtValue=document.getElementById("txt").value;
+        localStorage.setItem("passValue",txtValue);
+    }
+
+    function getTxt1(){
+        var txtValue=document.getElementById("txt1").value;
+        localStorage.setItem("passValue",txtValue);
+    }
+
+    function getTxt2(){
+        var txtValue=document.getElementById("txt2").value;
+        localStorage.setItem("passValue",txtValue);
+    }
+
+    function getTxt3(){
+        var txtValue=document.getElementById("txt3").value;
+        localStorage.setItem("passValue",txtValue);
+    }
+
+    function getTxt4(){
+        var txtValue=document.getElementById("txt4").value;
+        localStorage.setItem("passValue",txtValue);
+    }
+
+    function getTxt5(){
+        var txtValue=document.getElementById("t5").value;
+        localStorage.setItem("passValue",txtValue);
+    }
+
+    function getTxt6(){
+        var txtValue=document.getElementById("txt6").value;
+        localStorage.setItem("passValue",txtValue);
+    }
+
+    function getTxt7(){
+        var txtValue=document.getElementById("txt7").value;
+        localStorage.setItem("passValue",txtValue);
+    }
+
+    function getTxt8(){
+        var txtValue=document.getElementById("txt7").value;
+        localStorage.setItem("passValue",txtValue);
+    }
+
+  </script>
+  
+</head>
+<body>
+  <h3>Choose the right plan for you</h3>
+  <form action="index.html" method="get">
+  <div class="row">
+    <div class="col-sm-1">
+      <button class="box" type="button" onclick="getTxt8()">Monthly</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="box1" type="button">Anually</button>
+    </div>
+  </div>
+</form>
+
+  <ul class="monthly">
+    <li class="sub sub1"  value="Mobile">Mobile</li>
+    <li class="sub sub2" value="Basic">Basic</li>
+    <li class="sub sub3" value="Standard">Standard</li>
+    <li class="sub sub4" value="Premium">Premium</li>
+</ul>
+<div class="t1">
+  <table>
+    <form action="index.html" method="get">
+      <tr class="tr1">
+                  <td class="tab">Monthly price</td>
+                  <td class="tab ho1"><input type="text" value="100" id="txt"  readonly style="font-size: 25px;">
+                  <input type="submit" value="Click" onclick="getTxt()"></td>
+                  <td class="tab ho2"><input type="text" value="200" id="txt1" readonly   style="font-size: 25px;">
+                  <input type="submit" value="Click" onclick="getTxt1()" readonly></td>
+                  <td class="tab ho3"><input type="text" value="500" id="txt2" readonly   style="font-size: 25px;">
+                  <input type="submit" value="Click" onclick="getTxt2()" readonly></td>
+                  <td class="tab ho4"><input type="text" value="700" id="txt3" readonly    style="font-size: 25px;">
+                      <input type="submit" value="Click" onclick="getTxt3()" readonly></td>
+      </tr>
+  </form>
+    <tr>
+      <td class="tab" >Video Quality</td>
+      <td class="tab ho1">Good</td>
+      <td class="tab ho2">Good</td>
+      <td class="tab ho3"> Better</td>
+      <td class="tab ho4"> Best</td>
+    </tr>
+
+    <tr>
+      <td class="tab">Resolution</td>
+      <td class="tab ho1">480p</td>
+      <td class="tab ho2">480p</td>
+      <td class="tab ho3">1080p</td>
+      <td class="tab ho4"> 4K+HDR</td>
+    </tr>
+
+    <tr>
+      <td class="tab">Resolution</td>
+      <td class="tab ho1">480p</td>
+      <td class="tab ho2">480p</td>
+      <td class="tab ho3">1080p</td>
+      <td class="tab ho4"> 4K+HDR</td>
+    </tr>
+
+    <tr>
+      <td class="tab" id="tab1">Devices </td>
+      <td class="tab ho1" id="tab1">Phone</td>
+      <td class="tab ho2" id="tab1">Phone</td>
+      <td class="tab ho3" id="tab1">Phone</td>
+      <td class="tab ho4" id="tab1">Phone</td>
+    </tr>
+
+    <tr>
+      <td class="tab" id="tab1"></td>
+      <td class="tab ho1" id="tab1"></td>
+      <td class="tab ho2 " id="tab1">Tablet</td>
+      <td class="tab ho3" id="tab1">Tablet</td>
+      <td class="tab ho4" id="tab1">Tablet</td>
+    </tr>
+
+    <tr>
+      <td class="tab" id="tab1"></td>
+      <td class="tab ho1" id="tab1"></td>
+      <td class="tab ho2" id="tab1"></td>
+      <td class="tab ho3" id="tab1">Computer</td>
+      <td class="tab ho4" id="tab1">Computer</td>
+    </tr>
+
+    <tr>
+      <td class="tab" id="tab1"></td>
+      <td class="tab ho1" id="tab1"></td>
+      <td class="tab ho2" id="tab1"></td>
+      <td class="tab ho3" id="tab1"></td>
+      <td class="tab ho4" id="tab1">TV</td>
+    </tr>
+  </table>
+ 
+</div>
+
+<!-- Anually -->
+
+<ul class="anually">
+  <li class="sub sub1 " >Mobile</li>
+  <li class="sub sub2">Basic</li>
+  <li class="sub sub3" >Standard</li>
+  <li class="sub sub4">Premium</li>
+</ul>
+
+<div class="t2">
+  <table>
+    <form action="index.html" method="get">
+      <tr class="tr1">
+                  <td class="tab">Monthly price</td>
+                  <td class="tab ho1"><input type="text" value="1000" id="txt4"  readonly style="font-size: 25px;">
+                  <input type="submit" value="Click" onclick="getTxt4()"></td>
+                  <td class="tab ho2"><input type="text" value="2000" id="t5" readonly   style="font-size: 25px;">
+                  <input type="submit" value="Click" onclick="getTxt5()" readonly></td>
+                  <td class="tab ho3"><input type="text" value="5000" id="txt6" readonly   style="font-size: 25px;">
+                  <input type="submit" value="Click" onclick="getTxt6()" readonly></td>
+                  <td class="tab ho4"><input type="text" value="7000" id="txt7" readonly    style="font-size: 25px;">
+                      <input type="submit" value="Click" onclick="getTxt7()" readonly></td>
+      </tr>
+  </form>
+    <tr>
+      <td class="tab" >Video Quality</td>
+      <td class="tab ho1">Good</td>
+      <td class="tab ho2">Good</td>
+      <td class="tab ho3"> Better</td>
+      <td class="tab ho4"> Best</td>
+    </tr>
+
+    <tr>
+      <td class="tab">Resolution</td>
+      <td class="tab ho1">480p</td>
+      <td class="tab ho2">480p</td>
+      <td class="tab ho3">1080p</td>
+      <td class="tab ho4"> 4K+HDR</td>
+    </tr>
+
+    <tr>
+      <td class="tab">Resolution</td>
+      <td class="tab ho1">480p</td>
+      <td class="tab ho2">480p</td>
+      <td class="tab ho3">1080p</td>
+      <td class="tab ho4"> 4K+HDR</td>
+    </tr>
+
+    <tr>
+      <td class="tab" id="tab1">Devices </td>
+      <td class="tab ho1" id="tab1">Phone</td>
+      <td class="tab ho2" id="tab1">Phone</td>
+      <td class="tab ho3" id="tab1">Phone</td>
+      <td class="tab ho4" id="tab1">Phone</td>
+    </tr>
+
+    <tr>
+      <td class="tab" id="tab1"></td>
+      <td class="tab ho1" id="tab1"></td>
+      <td class="tab ho2 " id="tab1">Tablet</td>
+      <td class="tab ho3" id="tab1">Tablet</td>
+      <td class="tab ho4" id="tab1">Tablet</td>
+    </tr>
+
+    <tr>
+      <td class="tab" id="tab1"></td>
+      <td class="tab ho1" id="tab1"></td>
+      <td class="tab ho2" id="tab1"></td>
+      <td class="tab ho3" id="tab1">Computer</td>
+      <td class="tab ho4" id="tab1">Computer</td>
+    </tr>
+
+    <tr>
+      <td class="tab" id="tab1"></td>
+      <td class="tab ho1" id="tab1"></td>
+      <td class="tab ho2" id="tab1"></td>
+      <td class="tab ho3" id="tab1"></td>
+      <td class="tab ho4" id="tab1">TV</td>
+    </tr>
+  </table>
+  <div class="btn">
+    <button type="button" id="btn"><a href="index.html">Next</a></button>
+  </div>
+</div>
+
+</body>
+</html>

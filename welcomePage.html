@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body{
+            background-color: black;
+        }
+      button {
+        margin: 4px;
+      }
+
+      img {
+        width: 100%;
+        height: 500px;
+      }
+
+      .images {
+        float: left;
+        cursor: pointer;
+      }
+
+      img.i1 {
+        width: 650px;
+        height: 250px;
+        padding: 20px;
+      }
+      h5 {
+        text-align: center;
+        font-size: 45px;
+        padding-top: 10px;
+        text-shadow: 2px 5px 1px red, 3px 6px 15px blue;
+        color: white;
+      }
+      #f1{
+        padding:20px;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        text-shadow: 5px 4px 1px blue;
+    }
+
+    #logo{
+        width:150px;
+        height:70px;
+        border: none;
+        opacity: 1;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img id="logo" class="rounded-circle" src="https://static.vecteezy.com/system/resources/previews/020/067/219/original/lbv-creative-initials-letter-logo-lbv-abstract-technology-circle-setting-logo-design-on-black-background-lbv-creative-initials-letter-logo-vector.jpg" alt="sample image"/></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#nCollapse"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="nCollapse">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Watch for free</a>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn btn-danger">
+                <a href="SignUp.html">SignUp</a>
+              </button>
+              <button class="btn btn-danger">
+                <a href="login.html">Login</a>
+              </button>
+            </div>
+          </nav>
+        </div>
+
+        <!--Carousel-->
+        <div class="carousel slide" id="mini">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#mini"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mini"
+              data-bs-slide-to="1"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mini"
+              data-bs-slide-to="2"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mini"
+              data-bs-slide-to="3"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mini"
+              data-bs-slide-to="4"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#mini"
+              data-bs-slide-to="5"
+              class="ative"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2023/03/sdsdewswddddsdd-1679670807.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.pinkvilla.com/images/2022-10/1613039298_rajinikanth-jailer_1280*720.jpg"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://www.comingsoon.net/wp-content/uploads/sites/3/2023/09/A-Million-Miles-Away.jpg"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7791A92CA30EF9F51223B11EF62661ED67689005008D16B1876A97AE80964444/scale?width=1200&aspectRatio=1.78&format=jpeg"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://www.hindustantimes.com/ht-img/img/2023/06/14/1600x900/Adipurush-Raja-0_1672473462113_1686758055869.jpeg"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://mir-s3-cdn-cf.behance.net/projects/404/805868168735551.Y3JvcCw4MDgsNjMyLDAsMA.jpg"
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#mini"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Prev</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#mini"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Prev</span>
+          </button>
+        </div>
+        <h5>Popular Shows</h5>
+        <div class="images">
+          <img
+            class="i1"
+            src="https://www.filmify.in/wp-content/uploads/2023/01/balayya-land.jpg"
+          />
+        </div>
+        <div class="images">
+          <img
+            class="i1"
+            src="https://image-resizer-cloud-api.akamaized.net/image/407483FB-3929-4A42-ACFB-B0D5C55CBC33/0-16x9.jpg?width=1920"
+          />
+        </div>
+        <div class="images">
+          <img
+            class="i1"
+            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202205/Untitled_design_-_2022-05-04T1_4.png?VersionId=qf5NFK9NmEAJanptLIt8mt150Ml6t2jI"
+          />
+        </div>
+        <div class="images">
+          <img
+            class="i1"
+            src="https://st1.bollywoodlife.com/wp-content/uploads/2022/09/Untitled-design-19.jpg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+   
+<div id="f1">
+    This website belongs to LBV.Copyright © 2023. All rights  are reserved.
+</div>
+  </body>
+</html>

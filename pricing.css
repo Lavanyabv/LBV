@@ -1,0 +1,276 @@
+/* *{
+    margin:0px;
+    padding:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing:border-box;
+}
+
+.box,.box1{
+    margin: 10px;
+    padding:15px;
+    font-size: medium;
+    text-align: center;
+    color:black;
+    width: 150px;
+    height:50px;
+    border-radius:20px;
+    border:1px solid blue;
+}
+
+h3{
+    text-align: center;
+    padding: 5px;
+}
+.box:hover{
+    background-color:blue;
+    color: white;
+}
+
+.box1:hover{
+    background-color:blue;
+    color: white;
+} 
+
+.monthly ,.anually{
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    margin:1px 70px 1px 200px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sub{
+    margin:15px;
+    padding: 35px;
+    font-size:15px;
+    font-weight: 600px;
+    color:white;
+    opacity: 0.9;
+    width:120px;
+    height:100px;
+    background-color:rgb(35, 35, 191);;
+    cursor:pointer;
+}
+
+
+
+table,tr{
+    margin-left:300px;
+    border: none;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.tab{
+    padding:7px 45px 7px 40px;
+    margin-top: 15px;
+    border-bottom: 3px solid rgb(35, 35, 191);;
+    text-align: center;
+    font-size: 15px;
+}
+
+#tab1{
+    border-bottom: none;
+}
+
+.btn{
+    align-items: center;
+    width:100%;
+    text-decoration: none;
+}
+
+#btn{
+    width: 25%;
+    height:45px;
+    background-color: blue;
+    color: white;
+    font-size:20px;
+    border:1px;
+    text-decoration: none;
+}
+
+#btn:hover{
+    background-color: red;
+    text-decoration: none;
+}
+
+ul li:hover {
+    background-color:blue;
+    width: 130px;
+    height:130px;
+    font-size:20px;
+}
+
+
+.ho1{
+    padding-left:30px;
+}
+
+button a{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+}
+
+a:visited{
+    color:white;
+}
+ */
+
+
+
+
+ *{
+    margin:0px;
+    padding:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing:border-box;
+}
+
+.box,.box1{
+    margin: 10px;
+    padding:15px;
+    font-size: medium;
+    text-align: center;
+    color:black;
+    width: 150px;
+    height:50px;
+    border-radius:20px;
+    border:1px solid blue;
+}
+
+h3{
+    text-align: center;
+    padding: 5px;
+}
+.box:hover{
+    background-color:blue;
+    color: white;
+}
+
+.box1:hover{
+    background-color:blue;
+    color: white;
+} 
+
+.monthly ,.anually{
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    margin:1px 70px 1px 200px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sub{
+    margin:15px;
+    padding: 35px;
+    font-size:15px;
+    font-weight: 600px;
+    color:white;
+    opacity: 0.9;
+    width:120px;
+    height:100px;
+    background-color:rgb(35, 35, 191);;
+    cursor:pointer;
+}
+
+
+
+table,tr{
+    margin-left:100px;
+    border: none;
+    font-size: 15px;
+    text-align: justify;
+    width: auto;
+}
+
+.tab{
+    padding:7px 45px 7px 45px;
+    margin-top: 15px;
+    border-bottom: 3px solid rgb(35, 35, 191);;
+    text-align: center;
+    font-size: 15px;
+}
+
+#tab1{
+    border-bottom: none;
+}
+
+.btn{
+    align-items: center;
+    width:100%;
+    text-decoration: none;
+}
+
+#btn{
+    width: 25%;
+    height:45px;
+    background-color: blue;
+    color: white;
+    font-size:20px;
+    border:1px;
+    text-decoration: none;
+}
+
+#btn:hover{
+    background-color: red;
+    text-decoration: none;
+}
+
+ul li:hover {
+    background-color:blue;
+    width: 130px;
+    height:130px;
+    font-size:20px;
+}
+
+
+.ho1{
+   padding-left:180px;
+   padding-right:30px;
+   
+}
+
+
+
+.ho2{
+    padding-left:0px;
+    padding-right:30px;
+   
+ }
+
+ .ho3{
+    padding-left:0px;
+    padding-right:30px;
+ }
+ 
+
+ .ho4{
+    padding-left:0px;
+ }
+button a{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+}
+
+a:visited{
+    color:white;
+}
+
+
+input{
+    width:120px;
+    display: block;
+    text-align: center;
+}
+
+
+input[type="submit"]{
+    background-color: green;
+    width:120px;
+    font-size:18px;
+    color: white;
+}

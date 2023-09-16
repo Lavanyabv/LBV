@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORDER SUMMARY</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+
+    
+ <span id="result"></span>
+    <span id="main"></span>
+    <span id="main1"></span>
+
+  
+   <!--  <div>
+      <p id="main1">Lorem, ipsum.</p>
+      <p id="main">Lorem ipsum dolor sit amet.</p>
+      <p id="result">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ab!</p>
+    </div> -->
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" id="c1">
+          <div id="c1">
+           <h3>Complete Payment</h3>
+           <h6 class="text-muted">Enter your details Below</h6>
+              <form action="thanks.html" method="get">
+           <label for="name">Full Name</label>
+          <div class="input-group">
+            <span class="input-group-text">
+              <span class="bi bi-person-fill"></span>
+            </span>
+            <input type="text" class="form-control" placeholder="Username" required/>
+          </div>
+
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <label for="card"><h5 style="padding-top: 30px;">Card Number</h5></label>
+              <div class="input-group">
+                <span class="input-group-text">
+                  <span class="bi bi-credit-card"></span>
+                </span>
+                <input type="tel" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="16" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <label for="Expiry"><h5 style="padding-top: 30px;">Expiry Date</h5></label>
+             <input type="date" required>
+            </div>
+            <div class="col-sm-6">
+              <label for="CVV"><h5 style="padding-top: 30px;">CVV</h5></label>
+             <input type="tel" maxlength="3" required>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6" id="c2">
+          <h3 style="padding-top: 50px;">Order Summary</h3>
+          <table class="table w-75">
+            <tr>
+              <td>Plan Name</td>
+              <td><span id="main"></span></td>
+            </tr>
+            <tr>
+              <td>Billing cycle</td>
+              <td><span id="main1"></span></td>
+            </tr>
+
+            <tr>
+              <td>Plan Price</td>
+              <td><span id="result"></span></td>
+            </tr>
+          </table>
+          <div class="row">
+            <button type="submit" id="btn">Confirm Payment</a></button>
+          </div>
+        </form>
+        </div>
+    
+      </div>
+      
+  
+    </div>
+
+    <script>
+      document.getElementById("result").innerHTML =
+        localStorage.getItem("passValue");
+      var data = (document.getElementById("result").innerHTML =
+        localStorage.getItem("passValue"));
+      console.log(data);
+      var s1 = parseInt(data);
+      console.log(s1);
+      var a = [100, 200, 500, 700];
+      var billing = function () {
+        if (a.includes(s1)) {
+          var m = "Monthly";
+          return m;
+        } else {
+          var y = "Anually";
+          return y;
+        }
+      };
+      var m = 100;
+      var M = 1000;
+      var b = 200;
+      var B = 2000;
+      var s = 500;
+      var S = 5000;
+      var p = 700;
+      var p = 7000;
+      var plan = function () {
+        if (s1 === m || s1 === M) {
+          return "Mobile";
+        } else if (s1 === b || s1 === B) {
+          return "Basic";
+        } else if (s1 === s || s1 === S) {
+          return "Standard";
+        } else {
+          return "Premium";
+        }
+      };
+      document.getElementById("main").innerHTML = billing();
+      document.getElementById("main1").innerHTML = plan();
+    </script>
+  </body>
+</html>
